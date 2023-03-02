@@ -6,4 +6,4 @@ from . models import ContactModel
 @admin.register(ContactModel)
 class ContactAdmin(admin.ModelAdmin):
     list_display = ['id', 'first_name', 'last_name', 'email']
-    search_fields = ('name', 'email')
+    search_fields = ['first_name', 'email']
